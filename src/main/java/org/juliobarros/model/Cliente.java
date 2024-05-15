@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -20,7 +22,7 @@ public class Cliente {
     private String sobrenome;
 
     @Column(nullable = false)
-    private Integer idade;
+    private LocalDate dataNascimento;
 
     @Column(nullable = false)
     private String telefone;
